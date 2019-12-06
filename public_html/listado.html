@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test técnico BCS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-md-10">
+                <h2>listado de &iacute;ndices</h2>
+                <table id="indices" class="table table-condensed table-bordered table-responsive">
+                    <thead>
+                    <tr>
+                        <td>Nemot&eacute;cnico</td>
+                        <td>Nombre</td>
+                        <td>Variaci&oacute;n</td>
+                        <td>Precio</td>
+                        <td>Vol&uacute;men</td>
+                    </tr>
+
+                    </thead>
+                    <tbody id="detalle">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="det" aria-labelledby="detLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="nemot"></h4>
+                  <small id="indic"></small>
+                </div>
+                
+                <div class="modal-body">
+                    <table class="table table-condensed table-striped">
+                        <tr>
+                            <th>Valor:</th><td>$<span id="val"></span></td>
+                        </tr>
+                        <tr>
+                            <th>Variaci&oacute;n:</th><td><span id="var"></span>%</td>
+                        </tr>
+                        <tr>
+                            <th>Ultima transacci&oacute;n:</th><td><span id="timeT"></span></td>
+                        </tr>
+                        <tr>
+                            <th>Volumen:</th><td> <span id="vol"></span></td>
+                        </tr>
+                    </table>
+                   
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/key.js"></script>
+        <script src="js/listado.js"></script>
+            
+    </body>
+</html>
